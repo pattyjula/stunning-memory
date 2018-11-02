@@ -14,3 +14,5 @@ Here are some commands from within Mongo shell
 Here are some commands you can run within GitBash but perhaps you would prefer to run as a [script](crt_vw.py)
 * Create a collection from CSV file content
   * `mongoimport -d patty -c colt --type csv --file open_data.csv --headerline`
+  
+  ![CSV import](import_csv.PNG "CSV import")
