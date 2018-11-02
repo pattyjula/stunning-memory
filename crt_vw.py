@@ -15,27 +15,23 @@ from pprint import PrettyPrinter
 '''
 Connection URL
 server
-mongo_con = MongoClient('mongodb://pjula:Pa55w.rd@10.200.14.135:27017/pjula')
+mongo_con = MongoClient('mongodb://user:pwd@server:27017')
 local uses localhost or maybe 127.0.0.1
 '''
 mongo_con = MongoClient('mongodb://localhost:27017')
-# collection
-coll_name = ""
+db_name='patty'
+database = mongo_con[db_name]
+coll_name='weekly_crime_up'
+csv_path='open_data_weekly_upload_occ_crm_data_i_u.csv'
 
-# list collections and create
-# target collection if it doesn't exist
-collist = mydb.list_collection_names()
+collist = database.list_collection_names()
 # Check for collection and create
 # if it doesn't exist
 if "weekly_crime_up" in collist:
 	print("The collection exists.")
 else:
-	coll_name = mydb["weekly_crime_up"]
+	coll_name = database["weekly_crime_up"]
 	
-db_name='patty'
-coll_name='weekly_crime_up'
-# csv file to import
-csv_path='open_data_weekly_upload_occ_crm_data_i_u.csv'
 
 def mongoimport(csv_path, db_name, coll_name):
     """ Imports a csv file at path csv_name to a mongo colection
@@ -52,8 +48,8 @@ def mongoimport(csv_path, db_name, coll_name):
     coll.insert(payload)
     print(coll.count())
 
-# Run function to create database
-#mongoimport(csv_path, db_name, coll_name)
+
+mongoimport(csv_path,db_name, coll_name)
 
 def mongoshow(db_name, coll_name):
     """ Connects to a client and pretty prints output
@@ -67,6 +63,5 @@ def mongoshow(db_name, coll_name):
         #pp = pprint.PrettyPrinter(depth=1)
         pprint.pprint(document, depth=1)
 
-# Run function to show documents in collection
-mongoshow(db_name, coll_name)
+#mongoshow(db_name, coll_name)
 
