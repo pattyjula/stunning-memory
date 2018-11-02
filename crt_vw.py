@@ -15,7 +15,7 @@ from pprint import PrettyPrinter
 '''
 Connection URL
 server
-mongo_con = 'mongodb://username:password@server:port/db'
+mongo_con = MongoClient('mongodb://username:password@server:port/db')
 local
 '''
 mongo_con = MongoClient('mongodb://localhost:27017')
