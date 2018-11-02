@@ -12,4 +12,5 @@ Here are some commands from within Mongo shell
 * `db.collection_name.find().pretty()`
 
 Here are some commands you can run within GitBash but perhaps you would prefer to run as a [script](crt_vw.py)
-* `mongoimport -d patty -c colt --type csv --file open_data.csv --headerline`
+* Create a collection from CSV file content
+  * `mongoimport -d patty -c colt --type csv --file open_data.csv --headerline`
