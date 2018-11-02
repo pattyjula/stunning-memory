@@ -12,18 +12,23 @@ import pprint
 from pprint import PrettyPrinter
 
 # specify variables
-# Connection URL
-# server
-# mongo_con = 'mongodb://username:password@server:port/db'
-# local
-mongo_con = MongoClient('mongodb://localhost:27017/')
+'''
+Connection URL
+server
+mongo_con = 'mongodb://username:password@server:port/db'
+local
+'''
+mongo_con = MongoClient('mongodb://localhost:27017')
 # database
 mydb = mongo_con["patty"]
-
 # collection
-mongo_con = mydb["weekly_crime_up"]
-	
+coll_name = ""
+
+# list collections and create
+# target collection if it doesn't exist
 collist = mydb.list_collection_names()
+# Check for collection and create
+# if it doesn't exist
 if "weekly_crime_up" in collist:
 	print("The collection exists.")
 else:
