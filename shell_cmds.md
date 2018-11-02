@@ -11,5 +11,5 @@ Here are some commands from within Mongo shell
 * `show collections` a collection is not made until there is content in it
 * `db.collection_name.find().pretty()`
 
-Here are some commands within GitBash but perhaps you would prefer to run as a [script](crt_vw.py)
+Here are some commands you can run within GitBash but perhaps you would prefer to run as a [script](crt_vw.py)
 * `mongoimport -d patty -c colt --type csv --file open_data.csv --headerline`
