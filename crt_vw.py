@@ -19,8 +19,6 @@ mongo_con = MongoClient('mongodb://username:password@server:port/db')
 local
 '''
 mongo_con = MongoClient('mongodb://localhost:27017')
-# database
-mydb = mongo_con["patty"]
 # collection
 coll_name = ""
 
