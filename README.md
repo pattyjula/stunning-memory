@@ -3,7 +3,7 @@ Reference for MongoDB common tasks
 
 ## Cotents
 
-The contents of this repository fall under two headings: Commands that can be run through Mongo Shell and Pymongo scripts
+The contents of this repository fall under two formats: Commands that can be run through Mongo Shell and Python scripts
 
 ### Mongo Shell
 
