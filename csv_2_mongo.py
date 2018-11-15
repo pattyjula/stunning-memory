@@ -52,7 +52,6 @@ def mongoimport(csv_path, db_name, coll_name):
     """ Imports a csv file at path csv_name to a mongo colection
     returns: count of the documants in the new collection
     """
-    #'10.200.14.135'
     client = mongo_con
     db = client[db_name]
     print(client)
