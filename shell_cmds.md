@@ -18,4 +18,6 @@ Here are some commands you can run within GitBash but perhaps you would prefer t
   ![CSV import](import_csv.PNG "CSV import")
   
   ## Windows 7 :scream:
-  * Set data path for mongod to use with `"C:\Program Files\MongoDB\Server\4.0\bin\mongod.exe" --dbpath "C:\Program Files\MongoDB\Server\4.0\data"` if this is your install and set up
+  * Set data path for mongod to use with 
+  `"C:\Program Files\MongoDB\Server\4.0\bin\mongod.exe" --dbpath "C:\data"` 
+  if this is your install and set up
