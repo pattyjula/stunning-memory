@@ -21,3 +21,4 @@ Here are some commands you can run within GitBash but perhaps you would prefer t
   * Set data path for mongod to use with 
   `"C:\Program Files\MongoDB\Server\4.0\bin\mongod.exe" --dbpath "C:\data"` 
   if this is your install and set up
+  * To run python from Bash enter `alias python='winpty python.exe'`
